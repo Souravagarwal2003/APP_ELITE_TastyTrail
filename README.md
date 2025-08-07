@@ -45,4 +45,4 @@ ii. Add “favorite” recipe feature
 
 ## Deployment Link
 
-[Live Demo Link](https://appelite-tastetrail.netlify.app/)
+[Live Demo Link](https://byte-me-exe-tastetrail.netlify.app/)
