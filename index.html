@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login / Signup</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div id="container">
+    <h2 id="form-title">Login</h2>
+    <div id="error-message" role="alert" aria-live="assertive"></div>
+    <div id="success-message" role="alert" aria-live="polite"></div>
+    <form id="auth-form" novalidate>
+      <!-- For signup will show username -->
+      <div id="username-field" style="display:none;">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          autocomplete="username"
+          placeholder="Enter username"
+          minlength="3"
+          maxlength="25"
+        />
+      </div>
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        autocomplete="email"
+        placeholder="Enter email"
+        required
+      />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        autocomplete="current-password"
+        placeholder="Enter password"
+        required
+        minlength="6"
+      />
+      <button type="submit" id="submit-btn">Login</button>
+    </form>
+    <div id="toggle-link" tabindex="0" role="button" aria-pressed="false">
+      Don't have an account? Sign up
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>

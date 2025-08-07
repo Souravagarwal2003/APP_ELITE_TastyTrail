@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe Finder - Browse Recipes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header>
+       <div class="logo-container"> 
+      <h1><img src="images/Taste_Trail_Logo.png" alt="" class="logo">Taste Trail</h1>
+      </div>
+      <div id="favoriteCount" class="favorite-count" title="Total Favorite Recipes">❤️ 0</div>
+    </header>
+
+    <section class="filters" role="region" aria-label="Filter and search recipes">
+      <label for="categoryFilter">Filter by Category:</label>
+      <select id="categoryFilter" aria-label="Filter recipes by category">
+        <option class="filter-option" value="all">All</option>
+        <option class="filter-option" value="veg">Veg</option>
+        <option class="filter-option" value="non-veg">Non-Veg</option>
+        <option class="filter-option" value="quick">Quick (Under 30 min)</option>
+      </select>
+
+      <label for="searchInput">Search:</label>
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Search recipes..."
+        aria-label="Search recipes"
+        autocomplete="off"
+      />
+    </section>
+
+    <main>
+      <section id="recipesContainer" class="recipes-container" aria-live="polite" aria-label="Recipe list">
+        <!-- Recipe cards inserted here dynamically -->
+      </section>
+    </main>
+  </div>
+
+  <script src="recipes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
