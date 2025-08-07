@@ -45,4 +45,4 @@ ii. Add “favorite” recipe feature
 
 ## Deployment Link
 
-[Live Demo on GitHub Pages](https://yourusername.github.io/recipe-finder/)
+[Live Demo on GitHub Pages](https://appelite-tastetrail.netlify.app/)
